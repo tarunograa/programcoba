@@ -22,7 +22,7 @@ yes.addEventListener('click', function Q2() {
         pertanyaan.innerHTML = 'Terima Kasih Sudah menjawab';
         yj.innerHTML = 'Selesai';
         no.style.display = 'none';
-        alert("Selesai");
+        alert("Heheheheh");
         i = 0;
         return;
     } else if (i == 4) {
