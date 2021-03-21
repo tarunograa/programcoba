@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    
+
+}
+body {
+    background-color: linear-gradient( #EE7752, #E73C7E, #23A6D5,#23D5AB);
+    height: fit-content;
+}
+
+
+
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 800px;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+.area{
+  width: 80%;
+  height: 400px;
+  border: 10px solid snow;
+  border-radius: 20px;
+  margin: auto;
+  position: absolute;
+  left: 10%;
+  right: 15%;
+  top: 10%;
+}
+
+.area h1{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+
+
+}
+.area h3{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+
+}
+
+.answer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  
+}
+
+.yes, .no{
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  margin: 0 20px;
+  display: table;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.answer h2{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.no h2{
+  font-size: 20px;
+}
+
+
+
+
+@keyframes change {
+    
+0% {
+    background-position: 0 50%;
+}
+ 50%{
+     background-position: 100% 50%;
+ }
+ 100% {
+     background-position: 0 50%;
+ }
+} 
+
+/*mediaquery jancok */
+
+ @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .textme {
+      width:95%;
+  }
+  .btn.btn-big, .btn.btn-big2  {
+      margin-left: -60px;
+  } 
+   .jancuk {
+     width:100%;
+     
+   }
+  
+}
